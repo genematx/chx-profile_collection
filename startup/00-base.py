@@ -32,7 +32,7 @@ nslsii.configure_base(get_ipython().user_ns,
                       redis_url="xf11id1-chx-redis1.nsls2.bnl.gov",
                       redis_port=6380,
                       redis_ssl=True,
-                      publish_documents_with_kafka=True)
+                      publish_documents_with_kafka="chx")
 
 print("Initializing Tiled reading client...\nMake sure you check for duo push.")
 tiled_reading_client = from_profile("nsls2", username=None, include_data_sources=True)["chx"]["raw"]
